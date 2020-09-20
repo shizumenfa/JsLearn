@@ -1,4 +1,4 @@
-// 封装数学对象
+/* // 封装数学对象
 var myMath = {
     PI: 3.1415926,
     max: 　 function() {
@@ -234,12 +234,28 @@ var arr = [3, 2, 1, 5, 5, 4];
 // 从前向后查找
 console.log(arr.indexOf(5));
 // 从后向前查找
-console.log(arr.lastIndexOf(5));
+console.log(arr.lastIndexOf(5)); */
 
 
-//  获取数组元素索引
-var arr = [3, 2, 1, 5, 5, 4];
-// 从前向后查找
-console.log(arr.indexOf(5));
-// 从后向前查找
-console.log(arr.lastIndexOf(5));
+//数组去重
+var arr = ['c', 'a', 'z', 'a', 'x', 'a', 'x', 'c', 'b'];
+
+function unique(arr) {
+    var newArr = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (newArr.indexOf(arr[i]) === -1) {
+            newArr.push(arr[i]);
+        }
+
+    }
+    return newArr;
+}
+var demo = unique(['c', 'a', 'z', 'a', 'x', 'a', 'x', 'c', 'b'])
+console.log(demo);
+
+
+//数组转换字符串
+// toString
+console.log(arr.toString());
+// join('分割符')
+console.log(arr.join('|'));
