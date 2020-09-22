@@ -1,4 +1,4 @@
-/* var age = 20;
+var age = 20;
 console.log(isNaN(age));
 var usname = 'suchao';
 console.log(isNaN(usname));
@@ -225,7 +225,7 @@ console.log(Math.ceil(num));
 console.log(Math.round(num));
 var abs = -3;
 console.log(Math.abs(abs));
-*/
+
 
 var date = new Date('2023/5/23');
 console.log(date);
@@ -236,3 +236,27 @@ console.log(date.getDay());
 console.log(date.getHours());
 console.log(date.getMinutes());
 console.log(date.getSeconds());
+
+console.log(date.getTime());
+console.log(date.valueOf());
+var date1 = +new Date();
+console.log(date1);
+console.log(Date.now());
+
+
+var arr = [1, 2, 3, 4, 5, 6];
+arr.push(7);
+arr.unshift(0);
+console.log(arr);
+console.log(arr.pop());
+console.log(arr);
+console.log(arr.shift());
+console.log(arr);
+
+console.log(arr.reverse());
+console.log(arr.sort());
+console.log(arr.indexOf(4));
+console.log(arr.lastIndexOf(5));
+
+console.log(arr.toString());
+console.log(arr.join('|'));
